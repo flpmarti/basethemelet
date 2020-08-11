@@ -1,0 +1,92 @@
+/*  fix portlets, web content  */
+
+#wrapper{
+	padding-top: 0;
+}
+
+.portlet-column.portlet-column-only{
+	padding-left: 0;
+	padding-right: 0;
+}
+
+.portlet .portlet-content{
+	padding: 0;
+}
+
+.autofit-float.autofit-row.portlet-header{
+	margin-bottom: 0;
+}
+
+/** estilos administrador liferay */
+.portlet-topper {
+	background-color: #0B5FFF;
+	border-color: #0B5FFF;
+	border-radius: 2px 2px 0 0;
+	border-style: solid;
+	border-width: 1px 1px 1px 1px;
+	color: #FFF;
+	display: -webkit-box;
+	display: -moz-box;
+	display: box;
+	display: -moz-flex;
+	display: -ms-flexbox;
+	display: flex;
+	padding: 3px 12px 3px 24px;
+	position: relative;
+}
+
+@media (min-width: 576px){
+	.portlet > .portlet-topper {
+    	right: auto;
+	}
+}
+
+.portlet-topper-toolbar .lfr-icon-menu > a {
+    color: #FFF;
+}
+
+.panel-body .list-group{
+	font-size: 0.875rem;
+}
+
+.panel-title {
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+
+.portlet > .portlet-topper {
+    padding: 0 4px 0 24px;
+}
+
+@media (min-width: 576px){
+	.portlet.open > .portlet-content-editable, .portlet:hover > .portlet-content-editable, .portlet.focus > .portlet-content-editable {
+	    border-color: #0B5FFF;
+	    border-top-left-radius: 0;
+	    border-top-right-radius: 0;
+	}
+}
+
+@media (max-width: 767.98px){
+	.controls-visible .portlet-content-editable {
+	    border-color: #0B5FFF;
+	    border-top-left-radius: 0;
+	    border-top-right-radius: 0;
+	}
+}
+
+.portlet > .portlet-content-editable {
+    border-color: transparent;
+}
+
+.portlet-content-editable {
+    border-color: #0B5FFF;
+    border-radius: 0;
+    border-style: solid;
+    border-width: 1px 1px 1px 1px;
+}
+
+.portal-popup input[type='checkbox']{
+	appearance: checkbox;
+	-webkit-appearance: checkbox;
+	-moz-appearance: checkbox;
+}
